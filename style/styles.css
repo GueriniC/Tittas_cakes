@@ -301,8 +301,30 @@ a:active {
   max-width: 100%;
 }
 
-.grid-productos img:hover {
+.grid-productos .conteinerx:hover .infoproductos {
+  opacity: 1;
+}
+.grid-productos .conteinerx .infoproductos {
+  transition: opacity 0.5s;
+}
+.grid-productos .conteinerx img {
+  transition: opacity 0.5s;
+}
+.grid-productos .conteinerx:hover img {
   opacity: 0.5;
+}
+
+.conteinerx {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.infoproductos {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
 }
 
 .div01 {
