@@ -52,6 +52,15 @@ textarea {
 #header .home img {
   width: 95px;
 }
+#header .rrss {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#header .rrss svg {
+  width: 8%;
+  margin: 11px;
+}
 /*
 
 .links {
@@ -91,24 +100,11 @@ a:active {
 
 /*footer*/
 #footer {
-  position: fixed;
+  display: flex;
   bottom: 0;
   width: 100%;
-  height: 50px;
   padding: 5px;
   background-color: #c1d2fda4;
-}
-
-#footer .rrss {
-  display: flex;
-  position: absolute;
-  flex-direction: column;
-  bottom: 50px;
-  right: 0;
-}
-#footer .rrss svg {
-  width: 30px;
-  margin: 5px;
 }
 
 #footer .flex-info {
@@ -117,6 +113,7 @@ a:active {
   flex-direction: column;
   width: 100%;
   font-size: 20px;
+  bottom: 0;
 }
 
 #footer .flex-info .nametitta {
@@ -154,7 +151,7 @@ a:active {
 }
 
 #main .conteiner-1 {
-  width: 100%;
+  width: 80%;
 }
 #main .conteiner-1 img {
   margin: 5px;
@@ -166,8 +163,20 @@ a:active {
 }
 
 /*QUIENES SOMOS*/
-#main .conteiner-1 img {
-  width: 80%;
+#main .conteiner-1 .quienessomos {
+  display: flex;
+  align-items: center;
+}
+#main .conteiner-1 .quienessomos .textquienessomos p {
+  margin: 5%;
+  width: 70%;
+}
+#main .conteiner-1 .quienessomos .textquienessomos {
+  width: 50%;
+}
+
+#main .conteiner-1 .quienessomos img {
+  width: 50%;
 }
 
 /*slide images from Index*/
@@ -221,6 +230,9 @@ a:active {
   gap: 25px;
 }
 
+.info2 textarea {
+  resize: none;
+}
 #main .contacto-flex .yesno,
 .info4 {
   display: flex;
