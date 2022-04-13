@@ -1,0 +1,120 @@
+/*
+#header {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  background-color: #c1d2fd;
+  text-align: center;
+}
+
+#header .links {
+  flex-grow: 1;
+  font-size: 125%;
+}
+
+#header .links .link2 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+#header .links .link2 .list {
+  text-transform: uppercase;
+  justify-content: center;
+}
+#header .home {
+  display: flex;
+  width: 15%;
+  height: 100px;
+}
+
+#header .home img {
+  width: 95px;
+}
+
+}*/
+/*
+
+.links {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+  padding: 5px;
+}
+.home {
+  position: relative;
+}
+#header .home img {
+  width: 60%;
+}
+/*{.links {
+
+}
+.list {
+  display: inline;
+}
+
+
+
+.links {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+  padding: 5px;
+}
+.home {
+  position: relative;
+}
+#header .home img {
+  width: 60%;
+}
+
+
+
+
+
+
+
+
+    <!--
+    <div id="all">
+      <header id="header">
+        <div class="home">
+          <a href="./index.html">
+            <img src="./assets/img/logo.png" alt="tittas" />
+          </a>
+        </div>
+        <nav class="links">
+          <ul class="link2">
+            <li class="list">
+              <a href="./views/quienes_somos.html"> quiénes somos</a>
+            </li>
+            <li class="list"><a href="./views/recetas.html">recetas</a></li>
+            <li class="list">
+              <a href="./views/productos.html"> productos</a>
+            </li>
+            <li class="list"><a href="./views/contacto.html"> contacto</a></li>
+          </ul>
+        </nav>
+        
+      -->
+
+
+      
+/*LINKS PROPERTIES*/
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  color: #1098ad;
+  font-weight: bold;
+}
+a:active {
+  font-style: bold;
+}
