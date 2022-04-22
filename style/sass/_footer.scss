@@ -1,0 +1,37 @@
+
+/*footer*/
+#footer {
+  display: flex;
+  bottom: 0;
+  width: 100%;
+  padding: 5px;
+  background-color: #c1d2fda4;
+}
+
+#footer {
+  .flex-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 15px;
+    bottom: 0;
+    .nametitta {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Quattrocento";
+      img {
+        width: 30px;
+      }
+    }
+    .copyright {
+      display: flex;
+      font-size: 8px;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-bottom: 0;
+    }
+  }
+}

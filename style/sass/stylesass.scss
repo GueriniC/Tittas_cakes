@@ -1,0 +1,20 @@
+#all {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quattrocento";
+  color: #064d58;
+  background: linear-gradient(to bottom, #c1d2fdf1, #dbe5fff1);
+  li {
+    list-style-type: none;
+  }
+}
+
+@import "header";
+@import "footer";
+
+#indexmain {
+  padding-left: 4%;
+  padding-right: 4%;
+  margin-top: 0px;
+}

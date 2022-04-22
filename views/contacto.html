@@ -13,9 +13,12 @@
     />
     <link rel="stylesheet" href="../style/styles.css" />
     <!--FONTS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap"
+      rel="stylesheet"
+    />
     <title>contacto</title>
   </head>
 
@@ -25,14 +28,25 @@
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">
-              <img src="../assets/img/logo.png" alt="tittas" /></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <img src="../assets/img/logo.png" alt="tittas"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="./quienes_somos.html">quiénes somos</a>
+                  <a class="nav-link" href="./quienes_somos.html"
+                    >quiénes somos</a
+                  >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./recetas.html">recetas</a>
@@ -51,7 +65,7 @@
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="instagram"
-            viewBox="0 0 16 16"
+            viewbox="0 0 16 16"
           >
             <a href="https://www.instagram.com/tittas_cakes/" target="_blank">
               <path
@@ -62,7 +76,7 @@
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="whatsapp"
-            viewBox="0 0 16 16"
+            viewbox="0 0 16 16"
           >
             <a
               href="https://api.whatsapp.com/send?phone=+5491123241055&text= Hola Titta's Cake! Quisiera hacer un pedido"
@@ -74,95 +88,97 @@
             </a>
           </svg>
         </div>
-        </header>
-
-
+      </header>
 
       <main id="main">
         <h1 class="titles">Dejanos tu mensaje</h1>
-      <form  action="enviar.php" method="get" enctype="text/plain">
-        <fieldset class="contacto-flex">
-          <legend>Datos de contacto</legend>
-          <div class="info1">
-            <div>
-            <label for="nombre"></label>
-            <input
-              type="text"
-              name="nombre"
-              id="nombre"
-              placeholder="Nombre"
-              required          />
-          </div>
-   
-          <div>
-            <label for="email"></label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email"
-              required
-            />
-          </div>
-        
-          <div>
-            <label for="telefono"></label>
-            <input
-              type="tel"
-              name="telefono"
-              id="telefono"
-              placeholder="(código de área) número de contacto"
-              />
-          </div>
-        </div>
-          <div class="info2">
-            <label for="multi">Mensaje</label>
-            <textarea
-              name="mensaje"
-              id="mensaje"
-              placeholder="ingrese su mensaje"
-                            required  >
-            </textarea>
-          </div>
+        <form action="enviar.php" method="get" enctype="text/plain">
+          <fieldset class="contacto-flex">
+            <legend>Datos de contacto</legend>
+            <div class="info1">
+              <div>
+                <label for="nombre"></label>
+                <input
+                  type="text"
+                  name="nombre"
+                  id="nombre"
+                  placeholder="Nombre"
+                  required
+                />
+              </div>
 
-          <div class="info3">
-           <p>¿Queres que te contactemos?</p> 
-           <div class="yesno">
-           <div>
-            <input type="radio" name="curso" value="1" /> <label>Sí</label>
-          </div>
-          <div>
-            <input type="radio" name="curso" value="2" /> <label>No</label> </div>
-          </div>
-          </div>
-<div class="info4">
-          <input type="submit" value="Enviar" />
-          <input type="reset" value="Reset" />
-        </div>
-        </fieldset>
-      </form>
-    </main>
+              <div>
+                <label for="email"></label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
 
-   
-    <footer id="footer">
-         <div class="flex-info">
-        <div class="nametitta">
-        <img src="../assets/img/logo.png" alt="logo" /> 
-        <p>Titta's Cakes</p>
-      </div>
-        <p class="copyright">©GueriniC</p>
-      </div>
-     
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-      crossorigin="anonymous"
-    ></script>
+              <div>
+                <label for="telefono"></label>
+                <input
+                  type="tel"
+                  name="telefono"
+                  id="telefono"
+                  placeholder="(código de área) número de contacto"
+                />
+              </div>
+            </div>
+            <div class="info2">
+              <label for="multi">Mensaje</label>
+              <textarea
+                name="mensaje"
+                id="mensaje"
+                placeholder="ingrese su mensaje"
+                required
+              >
+              </textarea>
+            </div>
+
+            <div class="info3">
+              <p>¿Queres que te contactemos?</p>
+              <div class="yesno">
+                <div>
+                  <input type="radio" name="curso" value="1" />
+                  <label>Sí</label>
+                </div>
+                <div>
+                  <input type="radio" name="curso" value="2" />
+                  <label>No</label>
+                </div>
+              </div>
+            </div>
+            <div class="info4">
+              <input type="submit" value="Enviar" />
+              <input type="reset" value="Reset" />
+            </div>
+          </fieldset>
+        </form>
+      </main>
+
+      <footer id="footer">
+        <div class="flex-info">
+          <div class="nametitta">
+            <img src="../assets/img/logo.png" alt="logo" />
+            <p>Titta's Cakes</p>
+          </div>
+          <p class="copyright">©GueriniC</p>
+        </div>
+      </footer>
+      <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"
+      ></script>
+    </div>
   </body>
 </html>

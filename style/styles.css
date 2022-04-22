@@ -6,8 +6,7 @@
   color: #064d58;
 }
 #all {
-  background: linear-gradient(to bottom, #c1d2fdf1, #dbe5fff1)
-  
+  background: linear-gradient(to bottom, #c1d2fdf1, #dbe5fff1);
 }
 li {
   list-style-type: none;
@@ -96,22 +95,17 @@ li {
   flex-direction: column;
   padding: 2%;
   width: 100%;
-
   text-align: center;
   justify-content: center;
   align-items: center;
 }
 
-
-
 /* Main from sites*/
 
-#indexmain
-{
-padding-left: 4%;
-padding-right: 4%;
+#indexmain {
+  padding-left: 4%;
+  padding-right: 4%;
   margin-top: 0px;
-
 }
 
 .titles {
@@ -148,7 +142,6 @@ padding-right: 4%;
 #main .conteiner-1 .quienessomos img {
   width: 50%;
 }
-
 
 /*Contacto*/
 #main form {
@@ -318,32 +311,40 @@ textarea {
 
 /* vista mobile SMALL */
 @media only screen and (min-width: 200px) and (max-width: 991px) {
+  .navbar-brand img {
+    width: 60px;
+  }
+  #navbarNav {
+    font-size: 1rem;
+  }
 
-  .navbar-brand img {width: 60px}
-  #navbarNav {font-size: 1rem;}
+  #all {
+    height: 100%;
+  }
 
-#all {height: 100%;}
-
- .rrss {
+  .rrss {
     right: 0;
     width: 100%;
     flex-direction: row;
-   justify-content: flex-end;
-   position: relative;
-   
-
+    justify-content: flex-end;
+    position: relative;
   }
   .rrss svg {
     width: 20px;
     margin: 3;
   }
-  #main {margin-top: 0px}
-.titles {text-align: left; font-size: 2rem;}
+  #main {
+    margin-top: 0px;
+  }
+  .titles {
+    text-align: left;
+    font-size: 2rem;
+  }
   /*INDEX*/
-#indexmain {
-  margin-top:0 ;
-padding:0}
-
+  #indexmain {
+    margin-top: 0;
+    padding: 0;
+  }
 
   /*CONTACT*/
 
@@ -352,15 +353,19 @@ padding:0}
     width: 15em;
   }
 }
- 
 
 /* vista mobile LARGE y tablets */
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    
-  #navbarNav li {margin: 0; font-size: 1.65rem;}
-  .rrss {position: absolute;
-  z-index: 10;}
-  #main {margin-top: 0;}
-
-/
+  #navbarNav li {
+    margin: 0;
+    font-size: 1.65rem;
+  }
+  .rrss {
+    position: absolute;
+    z-index: 10;
+  }
+  #main {
+    margin-top: 0;
+  }
+}
