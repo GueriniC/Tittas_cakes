@@ -3,8 +3,6 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Quattrocento";
-  color: #064d58;
   background: -webkit-gradient(linear, left top, left bottom, from(#c1d2fdf1), to(#dbe5fff1));
   background: linear-gradient(to bottom, #c1d2fdf1, #dbe5fff1);
 }
@@ -37,6 +35,7 @@
 
 #header .navbar #navbarNav li .nav-link {
   color: #064d58;
+  font-family: "Quattrocento";
 }
 
 #header .rrss {
@@ -58,10 +57,17 @@
   z-index: 15;
 }
 
-#header .rrss svg {
-  width: 30px;
+#header .rrss .icono, #header .rrss .icono--ig, #header .rrss .icono--wapp {
   margin: 5px;
   z-index: 100;
+}
+
+#header .rrss .icono--ig {
+  width: 40px;
+}
+
+#header .rrss .icono--wapp {
+  width: 30px;
 }
 
 /*footer*/
@@ -79,19 +85,21 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
   font-size: 15px;
   bottom: 0;
+  font-family: "Quattrocento";
+  color: #064d58;
 }
 
 #footer .flex-info .nametitta {
@@ -104,7 +112,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Quattrocento";
 }
 
 #footer .flex-info .nametitta img {
@@ -120,6 +127,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
+  color: #064d58;
   margin-bottom: 0;
 }
 

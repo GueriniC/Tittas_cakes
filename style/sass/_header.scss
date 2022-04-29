@@ -1,4 +1,14 @@
 /*HEADER*/
+$style: (
+  color: #064d58,
+  font: "Quattrocento",
+);
+
+@mixin general {
+  display: flex;
+  flex-direction: column;
+}
+
 #header {
   .navbar {
     background-color: #c1d2fd;
@@ -13,14 +23,15 @@
       li {
         padding: 0px 20px;
         .nav-link {
-          color: #064d58;
+          color: map-get($style, color);
+          font-family: map-get($style, font);
         }
       }
     }
   }
+
   .rrss {
-    display: flex;
-    flex-direction: column;
+    @include general;
     align-items: flex-end;
     width: 10%;
     right: 0;
@@ -28,10 +39,17 @@
     padding: 0px 5px;
     position: fixed;
     z-index: 15;
-    svg {
-      width: 30px;
+    .icono {
       margin: 5px;
       z-index: 100;
+    }
+    .icono--ig {
+      @extend .icono;
+      width: 40px;
+    }
+    .icono--wapp {
+      @extend .icono;
+      width: 30px;
     }
   }
 }
