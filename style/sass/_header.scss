@@ -45,11 +45,49 @@ $style: (
     }
     .icono--ig {
       @extend .icono;
-      width: 40px;
+      width: 31px;
     }
     .icono--wapp {
       @extend .icono;
       width: 30px;
+    }
+  }
+}
+
+/* vista mobile SMALL */
+@media only screen and (min-width: 200px) and (max-width: 991px) {
+  #header {
+    .rrss {
+      right: 0;
+      width: 100%;
+      flex-direction: row;
+      justify-content: flex-end;
+      position: relative;
+      .icono {
+        width: 20px;
+        margin: 3;
+      }
+    }
+    .navbar {
+      img {
+        width: 60px;
+      }
+      #navbarNav {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  #header {
+    .rrss {
+      position: absolute;
+      z-index: 10;
+    }
+    .navbar #navbarNav li {
+      margin: 0;
+      font-size: 1.65rem;
     }
   }
 }

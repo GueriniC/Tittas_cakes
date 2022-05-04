@@ -11,7 +11,8 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../style/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../style/sass/stylesass.css" />
+
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,12 +26,12 @@
   </head>
   <body>
     <div id="all">
-      <header>
+      <header id="header">
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">
-              <img src="../assets/img/logo.png" alt="tittas"
-            /></a>
+              <img src="../assets/img/logo.png" alt="tittas" />
+            </a>
             <button
               class="navbar-toggler"
               type="button"
@@ -65,7 +66,7 @@
         <div class="rrss">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="instagram"
+            class="icono--ig"
             viewbox="0 0 16 16"
           >
             <a href="https://www.instagram.com/tittas_cakes/" target="_blank">
@@ -76,7 +77,7 @@
           </svg>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="whatsapp"
+            class="icono--wapp"
             viewbox="0 0 16 16"
           >
             <a
@@ -95,10 +96,11 @@
         <div class="conteiner">
           <h1 class="titles">Nuestras tortas</h1>
 
-          <div class="grid-productos">
-            <div class="div01">
-              <div class="conteinerx">
+          <div class="container produc">
+            <div class="row cakeim">
+              <div class="col-sm cake">
                 <img src="../assets/img/torta08.jpg" alt="rogel" />
+
                 <div class="infoproductos">
                   <h3 class="nombreproducto">Rogel</h3>
                   <p class="descripcionproducto">
@@ -107,10 +109,7 @@
                   <p class="precioproducto">$2000</p>
                 </div>
               </div>
-            </div>
-
-            <div class="div02">
-              <div class="conteinerx">
+              <div class="col-sm cake">
                 <img src="../assets/img/torta12.jpg" alt="frutillas" />
                 <div class="infoproductos">
                   <h3 class="nombreproducto">Tarta de frutilla</h3>
@@ -118,10 +117,7 @@
                   <p class="precioproducto">$1900</p>
                 </div>
               </div>
-            </div>
-
-            <div class="div03">
-              <div class="conteinerx">
+              <div class="col-sm cake">
                 <img src="../assets/img/torta17.jpg" alt="moussecake" />
                 <div class="infoproductos">
                   <h3 class="nombreproducto">Mousse Cake</h3>
@@ -132,20 +128,20 @@
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="div04">
-              <div class="conteinerx">
-                <img src="../assets/img/torta22.jpeg" alt="toffe" />
+          <div class="container produc">
+            <div class="row cakeim">
+              <div class="col-sm cake">
+                <img src="../assets/img/torta22.jpeg" alt="maracuyá" />
                 <div class="infoproductos">
                   <h3 class="nombreproducto">Torta Toffe</h3>
                   <p class="descripcionproducto">con dulce de leche</p>
                   <p class="precioproducto">$2000</p>
                 </div>
               </div>
-            </div>
 
-            <div class="div05">
-              <div class="conteinerx">
+              <div class="col-sm cake">
                 <img src="../assets/img/torta15.jpg" alt="pavlova" />
                 <div class="infoproductos">
                   <h3 class="nombreproducto">Pavlova de nuez</h3>
@@ -155,10 +151,8 @@
                   <p class="precioproducto">$2300</p>
                 </div>
               </div>
-            </div>
 
-            <div class="div06">
-              <div class="conteinerx">
+              <div class="col-sm cake">
                 <img src="../assets/img/torta19.jpg" alt="torata2" />
                 <div class="infoproductos">
                   <h3 class="nombreproducto">Nutella cake</h3>
@@ -167,8 +161,11 @@
                 </div>
               </div>
             </div>
-            <div class="div07">
-              <div class="conteinerx">
+          </div>
+
+          <div class="container produc">
+            <div class="row cakeim">
+              <div class="col-sm cake">
                 <img src="../assets/img/torta16.jpg" alt="maracuyá" />
                 <div class="infoproductos">
                   <h3 class="nombreproducto">Cheescake Maracuyá</h3>
@@ -178,9 +175,8 @@
                   <p class="precioproducto">$2300</p>
                 </div>
               </div>
-            </div>
-            <div class="div08">
-              <div class="conteinerx">
+
+              <div class="col-sm cake">
                 <img src="../assets/img/torta11.jpg" alt="torata2" />
                 <div class="infoproductos">
                   <h3 class="nombreproducto">Carrot cake</h3>
@@ -188,9 +184,8 @@
                   <p class="precioproducto">$1900</p>
                 </div>
               </div>
-            </div>
-            <div class="div09">
-              <div class="conteinerx">
+
+              <div class="col-sm cake">
                 <img src="../assets/img/torta23.jpeg" alt="Letter M" />
                 <div class="infoproductos">
                   <h3 class="nombreproducto">Letter Cake</h3>

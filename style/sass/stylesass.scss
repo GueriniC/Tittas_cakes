@@ -1,22 +1,195 @@
+@import "header";
+@import "footer";
+
+$style: (
+  color: #064d58,
+  font-family: "Quattrocento",
+  display: flex,
+  col: column,
+  padding: 2%,
+  width: 100%,
+  text-align: center,
+  justify-content: center,
+  align-items: center,
+);
+.textboxes {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #8dadfd80;
+}
+
 #all {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background: linear-gradient(to bottom, #c1d2fdf1, #dbe5fff1);
+  color: map-get($style, color);
+  font-family: map-get($style, font);
   li {
     list-style-type: none;
   }
 }
 
-@import "header";
-@import "footer";
-
-#indexmain {
-  padding-left: 4%;
+/*INDEX*/
+#main-index {
+  padding: 4%;
   padding-right: 4%;
   margin-top: 0px;
 }
-$style: (
-  color: #064d58,
-  font-family: "Quattrocento",
-);
+
+/*views*/
+#main {
+  display: map-get($style, flex);
+  flex-direction: map-get($style, col);
+  padding: map-get($style, padding);
+  width: map-get($style, width);
+  text-align: map-get($style, text-align);
+  justify-content: map-get($style, justify-content);
+  align-items: map-get($style, align-items);
+
+  .conteiner-1 {
+    img {
+      margin: 5px;
+    }
+
+    .titles {
+      font-size: 3rem;
+      text-align: center;
+      margin: 1%;
+    }
+    .row {
+      font-size: 20px;
+      align-items: center;
+      margin: 15px;
+      .titlereceta {
+        font-size: 30px;
+      }
+      .textreceta {
+        text-align: justify;
+      }
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  .forms {
+    align-items: center;
+    .textparacontacto {
+      p {
+        font-size: 15px;
+      }
+      .rrss {
+        svg {
+          width: 30px;
+          margin: 20px;
+        }
+      }
+    }
+    .formularios {
+      background-color: #c1d2fd80;
+      .info1,
+      .info4,
+      .info {
+        margin: 15px;
+      }
+      .yesno {
+        display: flex;
+        justify-content: center;
+        margin: 15px;
+        gap: 25px;
+      }
+      .v {
+        text-align: left;
+        padding: 15px;
+        width: 80%;
+        .row {
+          justify-content: center;
+          textarea {
+            height: 5em;
+            resize: none;
+            @extend .textboxes;
+            background: rgba(232, 238, 252, 0.502);
+          }
+          input {
+            @extend .textboxes;
+          }
+        }
+      }
+    }
+  }
+}
+
+.recetasgrid {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: 90%;
+}
+
+.row {
+  font-size: 20px;
+  align-items: center;
+  margin: 15px;
+  img {
+    max-width: 100%;
+  }
+}
+
+.cake:hover .infoproductos {
+  opacity: 1;
+}
+.cake:hover img {
+  opacity: 0.5;
+}
+.cake {
+  position: relative;
+  text-align: center;
+  color: map-get($style, color);
+  font-family: map-get($style, font);
+  img {
+    transition: opacity 0.5s;
+  }
+  .infoproductos {
+    transition: opacity 0.5s;
+    font-family: map-get($style, font);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    .descripcionproducto {
+      text-transform: capitalize;
+    }
+  }
+}
+
+/* vista mobile SMALL */
+@media only screen and (min-width: 200px) and (max-width: 991px) {
+  #all {
+    height: 100%;
+  }
+
+  #main {
+    margin-top: 0px;
+  }
+  .titles {
+    text-align: left;
+    font-size: 2rem;
+  }
+  /*INDEX*/
+  #indexmain {
+    margin-top: 0;
+    padding: 0;
+  }
+  /*CONTACT*/
+  textarea {
+    height: 5em;
+    width: 15em;
+  }
+}
+/* vista mobile LARGE y tablets */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  #main {
+    margin-top: 0;
+  }
+}
