@@ -2,7 +2,7 @@
 @import "footer";
 
 $style: (
-  color: #064d58,
+  color: #748ac2f1,
   font-family: "Quattrocento",
   display: flex,
   col: column,
@@ -16,6 +16,8 @@ $style: (
   background: none;
   border: none;
   border-bottom: 2px solid #8dadfd80;
+  color: #596b9bf1;
+  font-family: "Quattrocento";
 }
 
 #all {
@@ -32,9 +34,11 @@ $style: (
 
 /*INDEX*/
 #main-index {
-  padding: 4%;
-  padding-right: 4%;
   margin-top: 0px;
+  img {
+    margin: auto;
+    width: 100%;
+  }
 }
 
 /*views*/
@@ -51,7 +55,6 @@ $style: (
     img {
       margin: 5px;
     }
-
     .titles {
       font-size: 3rem;
       text-align: center;
@@ -61,6 +64,9 @@ $style: (
       font-size: 20px;
       align-items: center;
       margin: 15px;
+      .texting {
+        margin-top: 15px;
+      }
       .titlereceta {
         font-size: 30px;
       }
@@ -92,6 +98,14 @@ $style: (
       .info {
         margin: 15px;
       }
+      .info4 {
+        input {
+          background: rgba(232, 238, 252, 0.502);
+          border: 1px solid #8dadfd80;
+          color: #596b9bf1;
+          font-family: "Quattrocento";
+        }
+      }
       .yesno {
         display: flex;
         justify-content: center;
@@ -99,6 +113,7 @@ $style: (
         gap: 25px;
       }
       .v {
+        margin: auto;
         text-align: left;
         padding: 15px;
         width: 80%;
@@ -151,6 +166,7 @@ $style: (
   .infoproductos {
     transition: opacity 0.5s;
     font-family: map-get($style, font);
+    color: #252e46f1;
     position: absolute;
     top: 50%;
     left: 50%;

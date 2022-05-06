@@ -21,7 +21,7 @@
 }
 
 #header .navbar #navbarNav li .nav-link {
-  color: #064d58;
+  color: #98abdbf1;
   font-family: "Quattrocento";
 }
 
@@ -123,7 +123,7 @@
   font-size: 15px;
   bottom: 0;
   font-family: "Quattrocento";
-  color: #064d58;
+  color: #98abdbf1;
 }
 
 #footer .flex-info .nametitta {
@@ -151,7 +151,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
-  color: #064d58;
+  color: #98abdbf1;
   margin-bottom: 0;
 }
 
@@ -159,6 +159,8 @@
   background: none;
   border: none;
   border-bottom: 2px solid #8dadfd80;
+  color: #596b9bf1;
+  font-family: "Quattrocento";
 }
 
 #all {
@@ -168,7 +170,7 @@
           box-sizing: border-box;
   background: -webkit-gradient(linear, left top, left bottom, from(#c1d2fdf1), to(#dbe5fff1));
   background: linear-gradient(to bottom, #c1d2fdf1, #dbe5fff1);
-  color: #064d58;
+  color: #748ac2f1;
 }
 
 #all li {
@@ -177,9 +179,12 @@
 
 /*INDEX*/
 #main-index {
-  padding: 4%;
-  padding-right: 4%;
   margin-top: 0px;
+}
+
+#main-index img {
+  margin: auto;
+  width: 100%;
 }
 
 /*views*/
@@ -215,6 +220,10 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 15px;
+}
+
+#main .conteiner-1 .row .texting {
+  margin-top: 15px;
 }
 
 #main .conteiner-1 .row .titlereceta {
@@ -254,6 +263,13 @@
   margin: 15px;
 }
 
+#main .forms .formularios .info4 input {
+  background: rgba(232, 238, 252, 0.502);
+  border: 1px solid #8dadfd80;
+  color: #596b9bf1;
+  font-family: "Quattrocento";
+}
+
 #main .forms .formularios .yesno {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -266,6 +282,7 @@
 }
 
 #main .forms .formularios .v {
+  margin: auto;
   text-align: left;
   padding: 15px;
   width: 80%;
@@ -312,7 +329,7 @@
 .cake {
   position: relative;
   text-align: center;
-  color: #064d58;
+  color: #748ac2f1;
 }
 
 .cake img {
@@ -323,6 +340,7 @@
 .cake .infoproductos {
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
+  color: #252e46f1;
   position: absolute;
   top: 50%;
   left: 50%;
