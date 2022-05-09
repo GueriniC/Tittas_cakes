@@ -226,16 +226,23 @@
   margin-top: 15px;
 }
 
-#main .conteiner-1 .row .titlereceta {
-  font-size: 30px;
-}
-
-#main .conteiner-1 .row .textreceta {
-  text-align: justify;
-}
-
 #main .conteiner-1 .row img {
   max-width: 100%;
+}
+
+#main .conteiner-1 .row .qya {
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+#main .conteiner-1 .row .qya .pregunta {
+  text-align: left;
+  font-weight: bold;
+}
+
+#main .conteiner-1 .row .qya .respuesta {
+  text-align: left;
 }
 
 #main .forms {
@@ -300,10 +307,8 @@
   background: rgba(232, 238, 252, 0.502);
 }
 
-.recetasgrid {
-  margin-bottom: 30px;
-  margin-top: 30px;
-  width: 90%;
+.listaprecios {
+  text-align: left;
 }
 
 .row {

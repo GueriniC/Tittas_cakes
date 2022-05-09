@@ -67,14 +67,21 @@ $style: (
       .texting {
         margin-top: 15px;
       }
-      .titlereceta {
-        font-size: 30px;
-      }
-      .textreceta {
-        text-align: justify;
-      }
       img {
         max-width: 100%;
+      }
+      .qya {
+        margin: auto;
+        margin-bottom: 50px;
+        margin-top: 50px;
+
+        .pregunta {
+          text-align: left;
+          font-weight: bold;
+        }
+        .respuesta {
+          text-align: left;
+        }
       }
     }
   }
@@ -133,13 +140,9 @@ $style: (
     }
   }
 }
-
-.recetasgrid {
-  margin-bottom: 30px;
-  margin-top: 30px;
-  width: 90%;
+.listaprecios {
+  text-align: left;
 }
-
 .row {
   font-size: 20px;
   align-items: center;
