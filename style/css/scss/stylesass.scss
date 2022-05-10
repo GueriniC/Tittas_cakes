@@ -70,8 +70,10 @@ $style: (
       img {
         max-width: 100%;
       }
+
       .qya {
         margin: auto;
+        align-items: flex-start;
         margin-bottom: 50px;
         margin-top: 50px;
 
@@ -85,6 +87,12 @@ $style: (
       }
     }
   }
+
+  .two {
+    background-color: #c1d2fd80;
+    border: 2px solid #8dadfd80;
+  }
+
   .forms {
     align-items: center;
     .textparacontacto {
@@ -143,13 +151,20 @@ $style: (
 .listaprecios {
   text-align: left;
 }
+
 .row {
   font-size: 20px;
-  align-items: center;
+
   margin: 15px;
   img {
     max-width: 100%;
   }
+}
+.pregfrecuentes {
+  align-items: flex-start;
+}
+.pregfrecuentes2 {
+  align-items: flex-start;
 }
 
 .cake:hover .infoproductos {
@@ -182,7 +197,7 @@ $style: (
 }
 
 /* vista mobile SMALL */
-@media only screen and (min-width: 200px) and (max-width: 991px) {
+@media only screen and (min-width: 320px) and (max-width: 991px) {
   #all {
     height: 100%;
   }
@@ -211,4 +226,24 @@ $style: (
   #main {
     margin-top: 0;
   }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #dbe5fff1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8dadfd80;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #748ac2f1;
 }
