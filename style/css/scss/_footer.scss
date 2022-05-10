@@ -8,7 +8,7 @@ $style: (
   display: flex;
   bottom: 0;
   width: 100%;
-  padding: 5px;
+  padding: 2px;
   background-color: #c1d2fda4;
 }
 @mixin general {
@@ -21,7 +21,6 @@ $style: (
     @include general;
     justify-content: center;
     align-items: center;
-    width: 100%;
     font-size: 15px;
     bottom: 0;
     font-family: map-get($style, font);
@@ -30,9 +29,6 @@ $style: (
       display: flex;
       justify-content: center;
       align-items: center;
-      img {
-        width: 30px;
-      }
     }
     .copyright {
       display: flex;
