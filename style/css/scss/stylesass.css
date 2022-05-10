@@ -323,7 +323,7 @@
   max-width: 100%;
 }
 
-.pregfrecuentes {
+.row .pregfrecuentes {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
