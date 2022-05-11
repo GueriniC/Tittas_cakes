@@ -50,148 +50,164 @@ $style: (
   text-align: map-get($style, text-align);
   justify-content: map-get($style, justify-content);
   align-items: map-get($style, align-items);
+}
+.titles {
+  font-size: 3rem;
+  text-align: center;
+  margin: 1%;
+}
 
-  .conteiner-1 {
+/*Quiénes somos*/
+#main .quiesomos {
+  .row {
+    margin-top: 60px;
+    align-items: center;
     img {
-      margin: 5px;
+      max-width: 100%;
     }
-    .titles {
-      font-size: 3rem;
-      text-align: center;
-      margin: 1%;
+    .texting {
+      margin-top: 15px;
+      p {
+        font-size: 18px;
+      }
     }
-    .row {
-      font-size: 20px;
-      align-items: center;
-      margin: 15px;
-      .texting {
-        margin-top: 15px;
-      }
-      img {
-        max-width: 100%;
-      }
+  }
+}
 
+/*Preguntas frecuentes*/
+#main .pregfec {
+  .row {
+    margin-top: 60px;
+    font-size: 20px;
+    .pregunta {
+      font-weight: bold;
+    }
+    .one {
       .qya {
         margin: auto;
-        align-items: flex-start;
-        margin-bottom: 50px;
-        margin-top: 50px;
-
-        .pregunta {
-          text-align: left;
-          font-weight: bold;
-        }
-        .respuesta {
-          text-align: left;
-        }
-      }
-    }
-  }
-
-  .two {
-    background-color: #c1d2fd80;
-    border: 2px solid #8dadfd80;
-  }
-
-  .forms {
-    align-items: center;
-    .textparacontacto {
-      p {
-        font-size: 15px;
-      }
-      .rrss {
-        svg {
-          width: 30px;
-          margin: 20px;
-        }
-      }
-    }
-    .formularios {
-      background-color: #c1d2fd80;
-      .info1,
-      .info4,
-      .info {
-        margin: 15px;
-      }
-      .info4 {
-        input {
-          background: rgba(232, 238, 252, 0.502);
-          border: 1px solid #8dadfd80;
-          color: #596b9bf1;
-          font-family: "Quattrocento";
-        }
-      }
-      .yesno {
-        display: flex;
-        justify-content: center;
-        margin: 15px;
-        gap: 25px;
-      }
-      .v {
-        margin: auto;
+        margin-bottom: 60px;
         text-align: left;
-        padding: 15px;
-        width: 80%;
-        .row {
-          justify-content: center;
-          textarea {
-            height: 5em;
-            resize: none;
-            @extend .textboxes;
-            background: rgba(232, 238, 252, 0.502);
-          }
-          input {
-            @extend .textboxes;
-          }
+      }
+    }
+    .two {
+      background-color: #c1d2fd80;
+      border: 2px solid #8dadfd80;
+      .pregunta {
+        text-align: center;
+      }
+    }
+  }
+}
+
+/*Contacto*/
+#main .forms {
+  margin-top: 60px;
+  align-items: center;
+  font-size: 20px;
+  .textparacontacto {
+    h1 {
+      font-size: 50px;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+    .rrss {
+      svg {
+        width: 30px;
+        margin: 20px;
+      }
+    }
+  }
+  .formularios {
+    background-color: #c1d2fd80;
+    padding: 25px;
+    .datos,
+    .info1,
+    .info4,
+    .info {
+      margin-top: 15px;
+    }
+    .info4 {
+      input {
+        background: rgba(232, 238, 252, 0.502);
+        border: 1px solid #8dadfd80;
+        color: #596b9bf1;
+        font-family: "Quattrocento";
+        margin: 0 15px 15px 15px;
+      }
+    }
+    .yesno {
+      display: flex;
+      justify-content: center;
+      margin: 15px;
+      gap: 30px;
+    }
+    .v {
+      margin: auto;
+      text-align: left;
+
+      padding-top: 60px;
+      width: 80%;
+
+      .row {
+        justify-content: center;
+        textarea {
+          height: 5em;
+          resize: none;
+          @extend .textboxes;
+          background: rgba(232, 238, 252, 0.502);
+        }
+        input {
+          @extend .textboxes;
         }
       }
     }
   }
 }
-.listaprecios {
-  text-align: left;
-}
 
-.row {
-  font-size: 20px;
-
-  margin: 15px;
-  img {
-    max-width: 100%;
+/*Productos*/
+#main {
+  .productostodo {
+    margin-top: 60px;
   }
-}
-.row .pregfrecuentes {
-  align-items: flex-start;
-}
-.pregfrecuentes2 {
-  align-items: flex-start;
-}
-
-.cake:hover .infoproductos {
-  opacity: 1;
-}
-.cake:hover img {
-  opacity: 0.5;
-}
-.cake {
-  position: relative;
-  text-align: center;
-  color: map-get($style, color);
-  font-family: map-get($style, font);
-  img {
-    transition: opacity 0.5s;
-  }
-  .infoproductos {
-    transition: opacity 0.5s;
-    font-family: map-get($style, font);
-    color: #252e46f1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    .descripcionproducto {
-      text-transform: capitalize;
+  .produc {
+    img {
+      max-width: 100%;
+    }
+    .cake:hover .infoproductos {
+      opacity: 1;
+    }
+    .cake:hover img {
+      opacity: 0.5;
+    }
+    .cake {
+      position: relative;
+      text-align: center;
+      color: map-get($style, color);
+      font-family: map-get($style, font);
+      img {
+        transition: opacity 0.5s;
+      }
+      .infoproductos {
+        transition: opacity 0.5s;
+        font-family: map-get($style, font);
+        color: #252e46f1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        text-transform: capitalize;
+        .nombreproducto {
+          font-size: 30px;
+        }
+        .precioproducto,
+        .descripcionproducto {
+          font-size: 15px;
+        }
+      }
     }
   }
 }

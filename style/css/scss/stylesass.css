@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*HEADER*/
 #header .navbar {
   background-color: #c1d2fd;
@@ -96,6 +97,9 @@
 
 /*footer*/
 #footer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,63 +203,74 @@
           align-items: center;
 }
 
-#main .conteiner-1 img {
-  margin: 5px;
-}
-
-#main .conteiner-1 .titles {
+.titles {
   font-size: 3rem;
   text-align: center;
   margin: 1%;
 }
 
-#main .conteiner-1 .row {
-  font-size: 20px;
+/*Quiénes somos*/
+#main .quiesomos .row {
+  margin-top: 60px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 15px;
 }
 
-#main .conteiner-1 .row .texting {
-  margin-top: 15px;
-}
-
-#main .conteiner-1 .row img {
+#main .quiesomos .row img {
   max-width: 100%;
 }
 
-#main .conteiner-1 .row .qya {
-  margin: auto;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-bottom: 50px;
-  margin-top: 50px;
+#main .quiesomos .row .texting {
+  margin-top: 15px;
 }
 
-#main .conteiner-1 .row .qya .pregunta {
-  text-align: left;
+#main .quiesomos .row .texting p {
+  font-size: 18px;
+}
+
+/*Preguntas frecuentes*/
+#main .pregfec .row {
+  margin-top: 60px;
+  font-size: 20px;
+}
+
+#main .pregfec .row .pregunta {
   font-weight: bold;
 }
 
-#main .conteiner-1 .row .qya .respuesta {
+#main .pregfec .row .one .qya {
+  margin: auto;
+  margin-bottom: 60px;
   text-align: left;
 }
 
-#main .two {
+#main .pregfec .row .two {
   background-color: #c1d2fd80;
   border: 2px solid #8dadfd80;
 }
 
+#main .pregfec .row .two .pregunta {
+  text-align: center;
+}
+
+/*Contacto*/
 #main .forms {
+  margin-top: 60px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 20px;
+}
+
+#main .forms .textparacontacto h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
 }
 
 #main .forms .textparacontacto p {
   font-size: 15px;
+  margin-bottom: 15px;
 }
 
 #main .forms .textparacontacto .rrss svg {
@@ -265,12 +280,14 @@
 
 #main .forms .formularios {
   background-color: #c1d2fd80;
+  padding: 25px;
 }
 
+#main .forms .formularios .datos,
 #main .forms .formularios .info1,
 #main .forms .formularios .info4,
 #main .forms .formularios .info {
-  margin: 15px;
+  margin-top: 15px;
 }
 
 #main .forms .formularios .info4 input {
@@ -278,6 +295,7 @@
   border: 1px solid #8dadfd80;
   color: #596b9bf1;
   font-family: "Quattrocento";
+  margin: 0 15px 15px 15px;
 }
 
 #main .forms .formularios .yesno {
@@ -288,13 +306,13 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin: 15px;
-  gap: 25px;
+  gap: 30px;
 }
 
 #main .forms .formularios .v {
   margin: auto;
   text-align: left;
-  padding: 15px;
+  padding-top: 60px;
   width: 80%;
 }
 
@@ -310,51 +328,35 @@
   background: rgba(232, 238, 252, 0.502);
 }
 
-.listaprecios {
-  text-align: left;
+/*Productos*/
+#main .productostodo {
+  margin-top: 60px;
 }
 
-.row {
-  font-size: 20px;
-  margin: 15px;
-}
-
-.row img {
+#main .produc img {
   max-width: 100%;
 }
 
-.row .pregfrecuentes {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.pregfrecuentes2 {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.cake:hover .infoproductos {
+#main .produc .cake:hover .infoproductos {
   opacity: 1;
 }
 
-.cake:hover img {
+#main .produc .cake:hover img {
   opacity: 0.5;
 }
 
-.cake {
+#main .produc .cake {
   position: relative;
   text-align: center;
   color: #748ac2f1;
 }
 
-.cake img {
+#main .produc .cake img {
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
 
-.cake .infoproductos {
+#main .produc .cake .infoproductos {
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
   color: #252e46f1;
@@ -364,10 +366,16 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   opacity: 0;
+  text-transform: capitalize;
 }
 
-.cake .infoproductos .descripcionproducto {
-  text-transform: capitalize;
+#main .produc .cake .infoproductos .nombreproducto {
+  font-size: 30px;
+}
+
+#main .produc .cake .infoproductos .precioproducto,
+#main .produc .cake .infoproductos .descripcionproducto {
+  font-size: 15px;
 }
 
 /* vista mobile SMALL */
