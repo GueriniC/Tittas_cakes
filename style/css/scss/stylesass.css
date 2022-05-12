@@ -50,11 +50,15 @@
   z-index: 100;
 }
 
+#header .rrss .icono path, #header .rrss .icono--ig path, #header .rrss .icono--wapp path {
+  fill: #596b9bf1;
+}
+
 #header .rrss .icono--ig {
   width: 21px;
 }
 
-#header .rrss .icono--wapp {
+#header .icono--wapp {
   width: 20px;
 }
 
@@ -62,6 +66,7 @@
 @media only screen and (min-width: 200px) and (max-width: 991px) {
   #header .rrss {
     right: 0;
+    top: 0;
     width: 100%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -226,7 +231,7 @@
 }
 
 #main .quiesomos .row .texting p {
-  font-size: 18px;
+  font-size: 2vh;
 }
 
 /*Preguntas frecuentes*/
@@ -276,6 +281,10 @@
 #main .forms .textparacontacto .rrss svg {
   width: 30px;
   margin: 20px;
+}
+
+#main .forms .textparacontacto .rrss svg path {
+  fill: #596b9bf1;
 }
 
 #main .forms .formularios {

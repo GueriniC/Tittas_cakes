@@ -68,7 +68,7 @@ $style: (
     .texting {
       margin-top: 15px;
       p {
-        font-size: 18px;
+        font-size: 2vh;
       }
     }
   }
@@ -115,6 +115,9 @@ $style: (
     }
     .rrss {
       svg {
+        path {
+          fill: #596b9bf1;
+        }
         width: 30px;
         margin: 20px;
       }
