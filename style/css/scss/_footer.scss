@@ -6,10 +6,8 @@ $style: (
 
 #footer {
   justify-content: center;
-  display: flex;
-  bottom: 0;
   width: 100%;
-  padding: 2px;
+  padding: 10px;
   background-color: #c1d2fda4;
 }
 @mixin general {
@@ -17,27 +15,38 @@ $style: (
   flex-direction: column;
 }
 
-#footer {
-  .flex-info {
-    @include general;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
-    bottom: 0;
+#footer .flex-info {
+  @include general;
+  display: flex;
+  text-align: center;
+
+  .nametitta {
+    font-size: 20px;
     font-family: map-get($style, font);
     color: map-get($style, color);
-    .nametitta {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    margin: 0;
+  }
+  .copyright {
+    font-size: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: map-get($style, color);
+    margin: 0;
+  }
+  .rrss {
+    .icono {
+      margin: 0px 20px 15px 20px;
+
+      path {
+        fill: #596b9bf1;
+      }
     }
-    .copyright {
-      display: flex;
-      font-size: 8px;
-      justify-content: center;
-      font-family: Arial, Helvetica, sans-serif;
-      color: map-get($style, color);
-      margin-bottom: 0;
+    .icono--ig {
+      @extend .icono;
+      width: 30px;
     }
+  }
+  .icono--wapp {
+    @extend .icono;
+    width: 31px;
   }
 }

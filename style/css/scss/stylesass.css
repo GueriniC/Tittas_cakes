@@ -26,42 +26,6 @@
   font-family: "Quattrocento";
 }
 
-#header .rrss {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  width: 10%;
-  right: 0;
-  top: 25px;
-  padding: 0px 5px;
-  position: fixed;
-  z-index: 15;
-}
-
-#header .rrss .icono, #header .rrss .icono--ig, #header .rrss .icono--wapp {
-  margin: 5px;
-  z-index: 100;
-}
-
-#header .rrss .icono path, #header .rrss .icono--ig path, #header .rrss .icono--wapp path {
-  fill: #596b9bf1;
-}
-
-#header .rrss .icono--ig {
-  width: 21px;
-}
-
-#header .icono--wapp {
-  width: 20px;
-}
-
 /* vista mobile SMALL */
 @media only screen and (min-width: 200px) and (max-width: 991px) {
   #header .rrss {
@@ -77,7 +41,7 @@
             justify-content: flex-end;
     position: relative;
   }
-  #header .rrss .icono, #header .rrss .icono--ig, #header .rrss .icono--wapp {
+  #header .rrss .icono, #header #footer .flex-info .rrss .icono--ig, #footer .flex-info #header .rrss .icono--ig, #header .rrss #footer .flex-info .icono--wapp, #footer .flex-info #header .rrss .icono--wapp {
     width: 20px;
     margin: 3;
   }
@@ -105,12 +69,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  bottom: 0;
   width: 100%;
-  padding: 2px;
+  padding: 10px;
   background-color: #c1d2fda4;
 }
 
@@ -122,41 +82,38 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 15px;
-  bottom: 0;
-  font-family: "Quattrocento";
-  color: #98abdbf1;
+  display: flex;
+  text-align: center;
 }
 
 #footer .flex-info .nametitta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  font-size: 20px;
+  font-family: "Quattrocento";
+  color: #98abdbf1;
+  margin: 0;
 }
 
 #footer .flex-info .copyright {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   font-size: 8px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
   color: #98abdbf1;
-  margin-bottom: 0;
+  margin: 0;
+}
+
+#footer .flex-info .rrss .icono, #footer .flex-info .rrss .icono--ig, #footer .flex-info .rrss .icono--wapp {
+  margin: 0px 20px 15px 20px;
+}
+
+#footer .flex-info .rrss .icono path, #footer .flex-info .rrss .icono--ig path, #footer .flex-info .rrss .icono--wapp path {
+  fill: #596b9bf1;
+}
+
+#footer .flex-info .rrss .icono--ig {
+  width: 30px;
+}
+
+#footer .flex-info .icono--wapp {
+  width: 31px;
 }
 
 .textboxes, #main .forms .formularios .v .row textarea, #main .forms .formularios .v .row input {
