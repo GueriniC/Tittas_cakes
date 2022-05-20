@@ -234,6 +234,7 @@ $style: (
     flex: none;
   }
 }
+
 @media only screen and (min-width: 200px) and (max-width: 351px) {
   #main .forms {
     .textparacontacto {
@@ -307,16 +308,31 @@ $style: (
   }
 }
 
-/* vista mobile LARGE y tablets */
-
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   #main {
     margin-top: 0;
   }
 }
+/*Productos*/
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 100%;
+  }
+
+  #main .produc .cake .infoproductos {
+    .nombreproducto {
+      font-size: 20px;
+    }
+    .descripcionproducto,
+    .precioproducto {
+      font-size: 15px;
+    }
+  }
+}
 
 @media only screen and (min-width: 150px) and (max-width: 575px) {
-  /*Productos*/
   #main .productostodo {
     margin-top: 0;
   }
@@ -338,10 +354,7 @@ $style: (
     }
   }
 }
-
 @media only screen and (min-width: 150px) and (max-width: 400px) {
-  /*Productos*/
-
   .produc .cake img {
     margin-bottom: 70px;
   }
