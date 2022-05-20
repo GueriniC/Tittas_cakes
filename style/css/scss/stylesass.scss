@@ -226,7 +226,7 @@ $style: (
   }
 }
 
-@media only screen and (min-width: 550px) and (max-width: 900px) {
+@media only screen and (min-width: 500px) and (max-width: 900px) {
   #main .forms .col {
     flex: none;
   }
@@ -283,28 +283,6 @@ $style: (
       margin: 50px;
     }
   }
-
-  /*Productos*/
-  #main .productostodo {
-    margin-top: 0;
-  }
-  .produc .cake img {
-    margin-bottom: 70px;
-  }
-  #main .produc .cake .infoproductos {
-    top: 90%;
-    opacity: 1;
-    width: 100%;
-    .nombreproducto {
-      font-size: 15px;
-      margin-bottom: 0;
-    }
-    .descripcionproducto,
-    .precioproducto {
-      font-size: 10px;
-      margin-bottom: 0;
-    }
-  }
 }
 
 /* vista mobile SMALL */
@@ -334,6 +312,48 @@ $style: (
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   #main {
     margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 150px) and (max-width: 575px) {
+  /*Productos*/
+  #main .productostodo {
+    margin-top: 0;
+  }
+  .produc .cake img {
+    margin-bottom: 98px;
+  }
+  #main .produc .cake .infoproductos {
+    top: 93%;
+    opacity: 1;
+    width: 100%;
+    .nombreproducto {
+      font-size: 25px;
+      margin-bottom: 0;
+    }
+    .descripcionproducto,
+    .precioproducto {
+      font-size: 20px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 150px) and (max-width: 400px) {
+  /*Productos*/
+
+  .produc .cake img {
+    margin-bottom: 70px;
+  }
+  #main .produc .cake .infoproductos {
+    top: 90%;
+    .nombreproducto {
+      font-size: 15px;
+    }
+    .descripcionproducto,
+    .precioproducto {
+      font-size: 10px;
+    }
   }
 }
 
