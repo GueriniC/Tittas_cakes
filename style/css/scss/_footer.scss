@@ -34,7 +34,7 @@ $style: (
   }
   .rrss {
     .icono {
-      margin: 0px 20px 15px 20px;
+      margin: 0px 40px 15px 40px;
 
       path {
         fill: #596b9bf1;
@@ -42,11 +42,11 @@ $style: (
     }
     .icono--ig {
       @extend .icono;
-      width: 30px;
+      width: 25px;
     }
   }
   .icono--wapp {
     @extend .icono;
-    width: 31px;
+    width: 26px;
   }
 }
