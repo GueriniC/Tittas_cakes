@@ -74,6 +74,7 @@ $style: (
 #main .pregfec {
   .row {
     font-size: 20px;
+    margin: auto;
     .pregunta {
       font-weight: bold;
     }
@@ -102,6 +103,7 @@ $style: (
 }
 /*Contacto*/
 #main .forms {
+  margin: auto;
   width: 100%;
   align-items: center;
   font-size: 20px;
@@ -261,7 +263,7 @@ $style: (
       }
     }
   }
-  #main .pregfec {
+  #main .pregfec .row {
     .row .col-5 {
       font-size: 12px;
       width: 100%;

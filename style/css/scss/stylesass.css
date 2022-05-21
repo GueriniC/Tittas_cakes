@@ -212,6 +212,7 @@
 /*Preguntas frecuentes*/
 #main .pregfec .row {
   font-size: 20px;
+  margin: auto;
 }
 
 #main .pregfec .row .pregunta {
@@ -245,6 +246,7 @@
 
 /*Contacto*/
 #main .forms {
+  margin: auto;
   width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -415,7 +417,7 @@
   #main .forms .textparacontacto p {
     font-size: 15px;
   }
-  #main .pregfec .row .col-5 {
+  #main .pregfec .row .row .col-5 {
     font-size: 12px;
     width: 100%;
   }
