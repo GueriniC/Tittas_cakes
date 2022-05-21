@@ -133,7 +133,7 @@
   }
   #footer .flex-info .rrss .icono, #footer .flex-info .rrss .icono--ig, #footer .flex-info .rrss .icono--wapp {
     width: 15px;
-    margin: 12px;
+    margin-bottom: 12px;
   }
 }
 
@@ -154,10 +154,6 @@
   background: -webkit-gradient(linear, left top, left bottom, from(#c1d2fdf1), to(#dbe5fff1));
   background: linear-gradient(to bottom, #c1d2fdf1, #dbe5fff1);
   color: #748ac2f1;
-}
-
-#all li {
-  list-style-type: none;
 }
 
 /*INDEX*/
@@ -190,13 +186,12 @@
 .titles {
   font-size: 50px;
   text-align: center;
-  margin: 1%;
   margin-bottom: 25px;
 }
 
 /*Quiénes somos*/
 #main .quiesomos .row {
-  margin-top: 60px;
+  margin-bottom: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -251,7 +246,6 @@
 /*Contacto*/
 #main .forms {
   width: 100%;
-  margin-top: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -279,7 +273,9 @@
 
 #main .forms .formularios {
   background-color: #c1d2fd80;
-  padding: 25px;
+  border: 1px solid #8dadfd80;
+  color: #596b9bf1;
+  border-radius: 15px;
 }
 
 #main .forms .formularios .datos,
@@ -377,42 +373,24 @@
   font-size: 15px;
 }
 
-@media only screen and (min-width: 500px) and (max-width: 900px) {
-  #main .forms .col {
-    -webkit-box-flex: 0;
-        -ms-flex: none;
-            flex: none;
-  }
+@media only screen and (min-width: 300px) and (max-width: 900px) {
+  #main .forms .col,
   #main .pregfec .row .col-sm {
     -webkit-box-flex: 0;
         -ms-flex: none;
             flex: none;
   }
-}
-
-@media only screen and (min-width: 200px) and (max-width: 351px) {
-  #main .forms .textparacontacto h1 {
-    font-size: 20px;
-  }
-  #main .forms .textparacontacto p {
-    font-size: 10px;
-  }
-  #main .pregfec .row .col-5 {
-    font-size: 15px;
-    width: 90%;
-  }
-  #main .forms .formularios .datos,
-  .info1,
-  .info4,
-  .info {
-    font-size: 15px;
-  }
-  #main .forms .formularios .v {
-    margin-top: 15px;
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 100%;
   }
 }
 
 @media only screen and (min-width: 200px) and (max-width: 575px) {
+  #main {
+    padding-top: 25px;
+  }
   .titles {
     text-align: center;
     font-size: 25px;
@@ -430,39 +408,29 @@
   }
 }
 
-/* vista mobile SMALL */
-@media only screen and (min-width: 250px) and (max-width: 991px) {
-  #all {
-    height: 100%;
+@media only screen and (min-width: 200px) and (max-width: 351px) {
+  #main .forms .textparacontacto h1 {
+    font-size: 25px;
   }
-  #main {
-    margin-top: 0px;
+  #main .forms .textparacontacto p {
+    font-size: 15px;
   }
-  /*INDEX*/
-  #indexmain {
-    margin-top: 0;
-    padding: 0;
+  #main .pregfec .row .col-5 {
+    font-size: 12px;
+    width: 100%;
   }
-  /*CONTACT*/
-  textarea {
-    height: 5em;
-    width: 15em;
+  #main .forms .formularios .datos,
+  .info1,
+  .info4,
+  .info {
+    font-size: 15px;
   }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  #main {
-    margin-top: 0;
+  #main .forms .formularios .v {
+    margin-top: 15px;
   }
 }
 
-/*Productos*/
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-  .container,
-  .container-md,
-  .container-sm {
-    max-width: 100%;
-  }
   #main .produc .cake .infoproductos .nombreproducto {
     font-size: 20px;
   }
@@ -493,6 +461,20 @@
     font-size: 20px;
     margin-bottom: 0;
   }
+  #main .quiesomos .row {
+    margin-bottom: 0;
+  }
+  #main .quiesomos .row img {
+    max-width: 95%;
+    margin-bottom: 15px;
+  }
+  #main .quiesomos .row .texting {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  #main .quiesomos .row .texting p {
+    font-size: 15px;
+  }
 }
 
 @media only screen and (min-width: 150px) and (max-width: 400px) {
@@ -500,7 +482,7 @@
     margin-bottom: 70px;
   }
   #main .produc .cake .infoproductos {
-    top: 90%;
+    top: 93%;
   }
   #main .produc .cake .infoproductos .nombreproducto {
     font-size: 15px;
@@ -511,6 +493,13 @@
   }
 }
 
+@media only screen and (min-width: 150px) and (max-width: 320px) {
+  #main .produc .cake .infoproductos {
+    top: 90%;
+  }
+}
+
+/*SIDEBAR*/
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
