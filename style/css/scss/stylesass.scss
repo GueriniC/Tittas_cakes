@@ -251,6 +251,12 @@ $style: (
       margin: 50px;
     }
   }
+  #main .pregfec .row {
+    .row .col-5 {
+      font-size: 16px;
+      width: 100%;
+    }
+  }
 }
 @media only screen and (min-width: 200px) and (max-width: 351px) {
   #main .forms {
@@ -261,12 +267,6 @@ $style: (
       p {
         font-size: 15px;
       }
-    }
-  }
-  #main .pregfec .row {
-    .row .col-5 {
-      font-size: 12px;
-      width: 100%;
     }
   }
   #main .forms .formularios .datos,
@@ -303,12 +303,12 @@ $style: (
     opacity: 1;
     width: 100%;
     .nombreproducto {
-      font-size: 25px;
+      font-size: 18px;
       margin-bottom: 0;
     }
     .descripcionproducto,
     .precioproducto {
-      font-size: 20px;
+      font-size: 14px;
       margin-bottom: 0;
     }
   }
